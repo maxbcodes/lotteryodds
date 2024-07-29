@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Draft Lottery</title>
+    <link rel="stylesheet" href="lottery_sim.css">
+    <link rel="icon" href="https://cdn.freebiesupply.com/images/large/2x/nba-logo-transparent.png" type="image/png">
+</head>
+<body>
+    <img id="title-image" src="https://seeklogo.com/images/N/nba-draft-logo-510F0C293C-seeklogo.com.png" alt="NBA Draft Logo">
+    <div class="probability-table-container">
+        <h2>Odds to Trade/Keep Picks</h2>
+        <table id="trade-probability-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Chance to Keep (%)</th>
+                    <th>Chance to Trade (%)</th>
+                    <th>Trade To Team</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toronto</td>
+                    <td>53.0</td>
+                    <td>47.0</td>
+                    <td>Spurs</td>
+                </tr>
+                <tr>
+                    <td>Detroit</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>Knicks</td>
+                </tr>
+                <tr>
+                    <td>Indiana</td>
+                    <td>3.0</td>
+                    <td>97.0</td>
+                    <td>Raptors</td>
+                </tr>
+                <tr>
+                    <td>Charlotte</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>Spurs</td>
+                </tr>
+                <tr>
+                    <td>Washington</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>Knicks</td>
+                </tr>
+                <tr>
+                    <td>Portland</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>Bulls</td>
+                </tr>
+                <tr>
+                    <td>Golden State</td>
+                    <td>2.8</td>
+                    <td>97.2</td>
+                    <td>Trail Blazers</td>
+                </tr>
+                <tr>
+                    <td>Sacramento</td>
+                    <td>5.19</td>
+                    <td>94.81</td>
+                    <td>Hawks</td>
+                </tr>
+                <tr>
+                    <td>Dallas</td>
+                    <td>10.0</td>
+                    <td>90.0</td>
+                    <td>Knicks</td>
+                </tr>
+                <tr>
+                    <td>Houston</td>
+                    <td>6.0</td>
+                    <td>94.0</td>
+                    <td>Thunder</td>
+                </tr>
+                <tr>
+                    <td>Utah</td>
+                    <td>47.5</td>
+                    <td>52.5</td>
+                    <td>Thunder</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h1>NBA Draft Lottery Simulator</h1>
+        <button id="run-lottery">Run Lottery</button>
+        <img id="lottery-image" src="" alt="Lottery Result" style="display:none; margin-top:20px;">
+        <ul id="draft-results"></ul>
+    </div>
+    <script src="lottery_sim.js"></script>
+</body>
+</html>
